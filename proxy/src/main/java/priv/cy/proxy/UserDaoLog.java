@@ -20,4 +20,10 @@ public class UserDaoLog implements UserDao {
         System.out.println("log");
         dao.query();
     }
+
+    @Override
+    public void query(String str) {
+        System.out.println("log");
+        dao.query();
+    }
 }

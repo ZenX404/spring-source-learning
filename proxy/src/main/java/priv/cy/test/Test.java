@@ -2,6 +2,7 @@ package priv.cy.test;
 
 import priv.cy.dao.UserDao;
 import priv.cy.dao.UserDaoImpl;
+import priv.cy.proxy.ProxyUtil;
 import priv.cy.proxy.UserDaoLog;
 import priv.cy.proxy.UserDaoLogImpl;
 
@@ -22,5 +23,8 @@ public class Test {
         proxy.query();
         System.out.println("==============");
 
+        // 实现动态代理
+        UserDao proxy1 = (UserDao) ProxyUtil.newInstance(new UserDaoImpl());
+        proxy1.query("动态代理");
     }
 }

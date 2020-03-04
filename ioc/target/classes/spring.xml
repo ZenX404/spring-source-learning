@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+        >
+
+
+    <bean id="dao" class="priv.cy.dao.IndexDaoImpl"></bean>
+
+    <bean id="dao1" class="priv.cy.dao.IndexDaoImpl1"></bean>
+
+    <bean id="service" class="priv.cy.dao.IndexService" autowire="byName"></bean>
+
+</beans>
+

@@ -10,6 +10,9 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
 
+/**
+ * 简单模拟动态代理（不能自定义代理逻辑）
+ */
 public class ProxyUtil {
     /**
      * 创建对象的过程
@@ -47,7 +50,7 @@ public class ProxyUtil {
         // 取得类的全限定名
         String importContent = "import " + targetInf.getName() + ";" + line;
 
-        String clazzFirstLineContent = "public class $Proxy implements " + infName + "{" + line;
+        String clazzFirstLineContent = "public class $Proxy implements " + infName + " {" + line;
         String filedContent = tab + "private " + infName + " target;" + line;
         String constructorContent = tab + "public $Proxy (" + infName + " target){" + line
                 + tab + tab + "this.target =target;"
@@ -62,7 +65,9 @@ public class ProxyUtil {
             // Sting.class String.class
             // 获得方法的所有参数类型
             Class args[] = method.getParameterTypes();
+            // 传入代理对象中代理方法的参数
             String argsContent = "";
+            // 代理对象中代理方法调用目标对象的目标方法时要传入的参数，和上面的区别就是上面是带着参数类型的，因为是在方法定义的地方写的，而这个没有参数类型，因为实在方法调用的地方写的
             String paramsContent = "";
             int flag = 0;
             for (Class arg : args) {
@@ -78,7 +83,7 @@ public class ProxyUtil {
                 paramsContent = paramsContent.substring(0, paramsContent.lastIndexOf(",") - 1);
             }
 
-            methodContent += tab + "public " + returnTypeName + " " + methodName + "(" + argsContent + ") {" + line
+            methodContent += tab + "public " + returnTypeName + " " + methodName + "(" + argsContent + ") throws Exception {" + line
                     + tab + tab + "System.out.println(\"log\");" + line
                     + tab + tab + "target." + methodName + "(" + paramsContent + ");" + line
                     + tab + "}" + line;

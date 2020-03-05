@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aop1" />
         <module name="ioc" />
-        <module name="proxy" />
-        <module name="aop" />
         <module name="ioc1" />
+        <module name="aop" />
+        <module name="proxy" />
       </profile>
     </annotationProcessing>
   </component>

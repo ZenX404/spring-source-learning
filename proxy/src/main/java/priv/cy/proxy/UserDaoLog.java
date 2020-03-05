@@ -16,13 +16,13 @@ public class UserDaoLog implements UserDao {
     }
 
     @Override
-    public void query() {
+    public void query() throws Exception {
         System.out.println("log");
         dao.query();
     }
 
     @Override
-    public void query(String str) {
+    public void query(String str) throws Exception {
         System.out.println("log");
         dao.query();
     }

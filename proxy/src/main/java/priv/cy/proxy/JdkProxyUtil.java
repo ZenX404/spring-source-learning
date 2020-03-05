@@ -97,7 +97,7 @@ public class JdkProxyUtil {
             // 开始生成方法定义代码
             methodContent += tab + "public " + returnTypeName + " " + methodName + "(" + argsContent + ")throws Exception {" + line
                     + tab + tab + "Method method = Class.forName(\"" + targetInf.getName() + "\").getDeclaredMethod(\"" + methodName + "\");" + line
-                    + ("void".equals(returnTypeName) ? (tab + tab + "h.invoke(method);" + line) : (tab + tab + "return (" + returnTypeName + ")h.invoke(method);" + line));
+                    + ("void".equals(returnTypeName) ? (tab + tab + "h.invoke(method);" + line) : (tab + tab + "return (" + returnTypeName + ")h.invoke(method);" + line)); // 这里要注意返回值类型是void的情况，这种没有返回值的方法不能加return，而且不能将对象强制转换成void类型。这里用三目运算做了判断
 
             methodContent += tab + "}" + line;
         }

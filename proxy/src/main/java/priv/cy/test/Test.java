@@ -13,25 +13,33 @@ import java.lang.reflect.Proxy;
 
 public class Test {
     public static void main(String[] args) throws Exception{
+        System.out.println("======目标对象=======");
         UserDaoImpl dao = new UserDaoImpl();
         dao.query();
-        System.out.println("==============");
+        System.out.println();
+
 
         // 使用继承完成代理
+        System.out.println("======使用继承实现静态代理=======");
         UserDaoImpl daoLog = new UserDaoLogImpl();
         daoLog.query();
-        System.out.println("==============");
+        System.out.println();
+
 
         // 使用聚合完成代理
+        System.out.println("=======使用聚合实现静态代理=======");
         UserDao target = new UserDaoImpl();
         UserDao proxy = new UserDaoLog(target);
         proxy.query();
-        System.out.println("==============");
+        System.out.println();
+
 
         // 实现动态代理(不能自定义代理逻辑)
+        System.out.println("=======模拟动态代理（不能自定义代理逻辑）=======");
         UserDao proxy1 = (UserDao) ProxyUtil.newInstance(new UserDaoImpl());
         proxy1.query("动态代理");
-        System.out.println("==============");
+        System.out.println();
+
 
 
         // 使用jdk来实现动态代理
@@ -50,13 +58,16 @@ public class Test {
         UserDao jdkProxy = (UserDao) Proxy.newProxyInstance(Test.class.getClassLoader(),
                 new Class[]{UserDao.class}, new TestInvocationHandler(new UserDaoImpl()));
 
+        System.out.println("=======使用JDK实现动态代理=======");
         jdkProxy.query();
         jdkProxy.query("hahah");
-        System.out.println("==============");
+        System.out.println();
+
 
 
         // 模拟jdk动态代理（可以实现自定义代理逻辑）
         // 传入JdkProxyUtil的内容的解释和上面jdk源码的解释是一样的
+        System.out.println("=======模拟JDK的动态代理（可以自定义代理逻辑）=======");
         UserDao coustomJdkProxy = (UserDao) JdkProxyUtil.newInstance(UserDao.class, new CoustomTestCustomHandler(new UserDaoImpl()));
         coustomJdkProxy.query();
     }

@@ -6,7 +6,8 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
- * 这个类就相当于之前我们自己手写模拟jdk动态代理类ProxyUtil，也是传入目标对象，然后进行动态代理。
+ *
+ * InvocationHandler接口的实现了，这个类用来自定义代理逻辑
  */
 public class TestInvocationHandler implements InvocationHandler {
     // 用于存储目标对象，这是因为如果想要执行目标对象的方法，在invoke方法中之传入一个方法得对象是没有意义的，必须还需要制定这个方法所在的对象，因为方法执行是依赖于对象的，方法执行的结果是需要作用在对象中的，使用反射机制直接通过方法对象来执行方法必须要指定一个对象

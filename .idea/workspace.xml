@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec2fa5fc-7321-4783-9378-acd2a70cc8fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +15,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="FxmlFile" />
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -59,14 +61,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="priv.cy.proxy" />
       <recent name="priv.cy.dao" />
+      <recent name="priv.cy.proxy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\我的电脑\文档\大学课程\Java Web\Spring\aop1\target\classes\priv\cy\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (4)">
+  <component name="RunManager" selected="Application.Test (5)">
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="priv.cy.test.Test" />
       <module name="ioc1" />
@@ -119,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="priv.cy.dao.Test" />
-      <module name="ioc" />
+    <configuration name="Test (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="priv.cy.test.Test" />
+      <module name="simulate spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="priv.cy.proxy.*" />
+          <option name="PATTERN" value="priv.cy.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test (5)" />
         <item itemvalue="Application.Test (4)" />
         <item itemvalue="Application.Test (3)" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +158,8 @@
       <workItem from="1583131113848" duration="15678000" />
       <workItem from="1583197065581" duration="32599000" />
       <workItem from="1583291860348" duration="22480000" />
-      <workItem from="1583369836237" duration="22197000" />
+      <workItem from="1583369836237" duration="24552000" />
+      <workItem from="1583456805510" duration="16176000" />
     </task>
     <servers />
   </component>
@@ -168,10 +171,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583317171223" />
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1583373112931">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1583466948944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583373112931" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583466948944" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583134784041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -180,38 +183,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="311" width="273" height="280" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1583316278340" />
-    <state width="1493" height="403" key="GridCell.Tab.0.bottom" timestamp="1583415258055">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1583488995117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583415258055" />
-    <state width="1493" height="403" key="GridCell.Tab.0.center" timestamp="1583415258055">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1583488995117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583415258055" />
-    <state width="1493" height="403" key="GridCell.Tab.0.left" timestamp="1583415258055">
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1583488995117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583415258055" />
-    <state width="1493" height="403" key="GridCell.Tab.0.right" timestamp="1583415258055">
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1583488995117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583415258055" />
-    <state width="1493" height="52" key="GridCell.Tab.1.bottom" timestamp="1583391918912">
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
+    <state width="1493" height="98" key="GridCell.Tab.1.bottom" timestamp="1583484485557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="52" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583391918912" />
-    <state width="1493" height="52" key="GridCell.Tab.1.center" timestamp="1583391918911">
+    <state width="1493" height="98" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
+    <state width="1493" height="98" key="GridCell.Tab.1.center" timestamp="1583484485557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="52" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583391918911" />
-    <state width="1493" height="52" key="GridCell.Tab.1.left" timestamp="1583391918911">
+    <state width="1493" height="98" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
+    <state width="1493" height="98" key="GridCell.Tab.1.left" timestamp="1583484485557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="52" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583391918911" />
-    <state width="1493" height="52" key="GridCell.Tab.1.right" timestamp="1583391918912">
+    <state width="1493" height="98" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
+    <state width="1493" height="98" key="GridCell.Tab.1.right" timestamp="1583484485557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="52" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583391918912" />
+    <state width="1493" height="98" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
     <state x="272" y="57" key="SettingsEditor" timestamp="1583316317187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -228,10 +231,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="511" y="45" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1583329466812" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583373690096">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583488290308">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583373690096" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583488290308" />
     <state x="449" y="104" key="spring file set editor" timestamp="1583134871479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    1、哪些类需要我来管理
+    2、怎么告诉我这些类(bean标签)
+    3、怎么维护依赖关系(setter方法或构造方法)
+    4、怎么体现setter或者构造方法（使用property或constructor内嵌标签）
+
+    spring就是通过bean标签来完成上面两个操作的
+-->
+<beans>
+    <!--
+        下面面的XML配置文件的含义就是我们将UserDaoImpl和UserServiceImpl装配到spring容器中，将他们的id分别设置成dao和service
+        service的依赖dao，并且通过相应的setter方法/构造方法注入
+    -->
+
+
+    <!--告诉sping容器UserDaoImpl需要它来管理-->
+    <bean id="dao" class="priv.cy.dao.UserDaoImpl"></bean>
+
+    <!--告诉sping容器UserServiceImpl需要它来管理-->
+    <bean id="service" class="priv.cy.service.UserServiceImpl">
+        <!--注入dao对象的前提就是dao对象已经装配给spring容器去管理，所以要先写一个dao对象的bean-->
+        <!--注入方法在setter和constructor之中选一个就行，不过要在代码中把需要的构造方法或者setter方法编写出来-->
+
+        <!--
+            使用构造方法注入
+            name:表示的是被注入的对象中所依赖的这个对象的属性名，也就是service对象中的UserDao类型的属性名为dao。这个name也可以不写，spring会自动找到构造方法去进行注入
+            ref:表示的是bean的id，也就是将spring容器中id为dao的这个bean注入到service中
+
+            下面这段代码的意思就是将spring容器中id为dao的这个bean通过构造方法注入到service中属性名为dao的这个属性
+        -->
+        <constructor-arg name="dao" ref="dao"></constructor-arg>
+
+    </bean>
+</beans>

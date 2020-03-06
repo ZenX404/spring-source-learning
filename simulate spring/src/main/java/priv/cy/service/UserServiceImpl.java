@@ -1,9 +1,11 @@
 package priv.cy.service;
 
+import priv.cy.dao.TestDao;
 import priv.cy.dao.UserDao;
 
 public class UserServiceImpl implements UserService {
-    UserDao dao;
+    private UserDao dao;
+    //private TestDao dao;
 
     /**
      * service是依赖dao这个对象的，我们已经将dao装配到spring容器之后，就需要由spring容器帮我们将dao注入到service对象中

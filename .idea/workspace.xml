@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec2fa5fc-7321-4783-9378-acd2a70cc8fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulate spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate spring/src/main/java/org/spring/util/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/src/main/java/org/spring/util/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate spring/src/main/java/priv/cy/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/src/main/java/priv/cy/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate spring/src/main/java/priv/cy/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/src/main/java/priv/cy/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate spring/target/classes/priv/cy/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/target/classes/priv/cy/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate spring/target/classes/priv/cy/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/simulate spring/target/classes/priv/cy/test/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +19,9 @@
       <list>
         <option value="FxmlFile" />
         <option value="AnnotationType" />
+        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -48,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aop1/target/classes/priv/cy/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-framework-5.1.x" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,6 +67,7 @@
       <recent name="priv.cy.proxy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\我的电脑\文档\大学课程\Java Web\Spring\simulate spring\src\main\resources" />
       <recent name="C:\我的电脑\文档\大学课程\Java Web\Spring\aop1\target\classes\priv\cy\dao" />
     </key>
   </component>
@@ -159,7 +162,7 @@
       <workItem from="1583197065581" duration="32599000" />
       <workItem from="1583291860348" duration="22480000" />
       <workItem from="1583369836237" duration="24552000" />
-      <workItem from="1583456805510" duration="16176000" />
+      <workItem from="1583456805510" duration="26575000" />
     </task>
     <servers />
   </component>
@@ -171,50 +174,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583317171223" />
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1583466948944">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1583500760648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583466948944" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583500760648" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583134784041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583134784041" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1583504568255">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583504568255" />
     <state x="631" y="311" width="273" height="280" key="Github.ShareDialog" timestamp="1583316278340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="311" width="273" height="280" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1583316278340" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1583488995117">
+    <state width="1493" height="475" key="GridCell.Tab.0.bottom" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1583488995117">
+    <state width="1493" height="475" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
+    <state width="1493" height="475" key="GridCell.Tab.0.center" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1583488995117">
+    <state width="1493" height="475" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
+    <state width="1493" height="475" key="GridCell.Tab.0.left" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1583488995117">
+    <state width="1493" height="475" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
+    <state width="1493" height="475" key="GridCell.Tab.0.right" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583488995117" />
-    <state width="1493" height="98" key="GridCell.Tab.1.bottom" timestamp="1583484485557">
+    <state width="1493" height="475" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
+    <state width="1493" height="475" key="GridCell.Tab.1.bottom" timestamp="1583504894503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="98" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
-    <state width="1493" height="98" key="GridCell.Tab.1.center" timestamp="1583484485557">
+    <state width="1493" height="475" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583504894503" />
+    <state width="1493" height="475" key="GridCell.Tab.1.center" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="98" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
-    <state width="1493" height="98" key="GridCell.Tab.1.left" timestamp="1583484485557">
+    <state width="1493" height="475" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
+    <state width="1493" height="475" key="GridCell.Tab.1.left" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="98" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
-    <state width="1493" height="98" key="GridCell.Tab.1.right" timestamp="1583484485557">
+    <state width="1493" height="475" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
+    <state width="1493" height="475" key="GridCell.Tab.1.right" timestamp="1583504894502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="98" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583484485557" />
+    <state width="1493" height="475" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583504894502" />
     <state x="272" y="57" key="SettingsEditor" timestamp="1583316317187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -248,7 +255,22 @@
           <line>154</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/simulate spring/src/main/java/org/spring/util/BeanFactory.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/simulate spring/src/main/java/org/spring/util/BeanFactory.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring$Test__5_.ic" NAME="Test (5) Coverage Results" MODIFIED="1583500049200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>priv.cy.test.*</FILTER>
+    </SUITE>
   </component>
 </project>

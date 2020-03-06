@@ -24,7 +24,7 @@
 
         <!--
             使用构造方法注入
-            name:表示的是被注入的对象中所依赖的这个对象的属性名，也就是service对象中的UserDao类型的属性名为dao。这个name也可以不写，spring会自动找到构造方法去进行注入
+            name:表示的是被注入的对象中所依赖的这个对象的属性名，不是构造方法传入参数的属性名。也就是service对象中的UserDao类型的属性名为dao。这个name也可以不写，spring会自动找到构造方法去进行注入
             ref:表示的是bean的id，也就是将spring容器中id为dao的这个bean注入到service中
 
             下面这段代码的意思就是将spring容器中id为dao的这个bean通过构造方法注入到service中属性名为dao的这个属性

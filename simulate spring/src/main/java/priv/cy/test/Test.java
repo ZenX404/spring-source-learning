@@ -6,7 +6,7 @@ import priv.cy.service.UserServiceImpl;
 
 public class Test {
     public static void main(String[] args) {
-        BeanFactory beanFactory = new BeanFactory("spring.xml");
+        BeanFactory beanFactory = new BeanFactory("spring2.xml");
 
         UserService service = (UserService) beanFactory.getBean("service");
         service.find();

@@ -1,4 +1,4 @@
-package org.spring.util;
+package org.spring.exception;
 
 /**
  * 自定义异常

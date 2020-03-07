@@ -1,11 +1,10 @@
 package priv.cy.service;
 
 import org.spring.annotation.Service;
-import priv.cy.dao.TestDao;
 import priv.cy.dao.UserDao;
 
-@Service("service")
-public class UserServiceImpl implements UserService {
+@Service("service1")
+public class UserServiceImpl1 implements UserService {
     private UserDao dao;
     //private TestDao dao;
 
@@ -28,14 +27,14 @@ public class UserServiceImpl implements UserService {
      * 因为要利用反射创建service对象，所以还需要一个无参构造方法
      * @param dao
      */
-    public UserServiceImpl(UserDao dao) {
+    public UserServiceImpl1(UserDao dao) {
         this.dao = dao;
     }
 
     /**
      * 无参构造方法用于反射创建service对象
      */
-    public UserServiceImpl() {}
+    public UserServiceImpl1() {}
 
     /**
      * setter方法

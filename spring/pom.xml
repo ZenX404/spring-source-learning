@@ -5,20 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Spring</artifactId>
+  <artifactId>spring</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>ioc</module>
-      <module>ioc1</module>
-      <module>aop</module>
-      <module>aop1</module>
-      <module>proxy</module>
-      <module>simulate spring</module>
-      <module>spring</module>
-  </modules>
-  <packaging>pom</packaging>
+  <packaging>war</packaging>
 
-  <name>Spring Maven Webapp</name>
+  <name>spring Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -35,25 +26,16 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-
     <!--spring核心以来，完成IOC90%的功能-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>5.0.9.RELEASE</version>
     </dependency>
-
-    <!--支持aspectJ语法-->
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjweaver</artifactId>
-      <version>1.9.0</version>
-    </dependency>
-
   </dependencies>
 
   <build>
-    <finalName>Spring</finalName>
+    <finalName>spring</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

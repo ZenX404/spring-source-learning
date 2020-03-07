@@ -2,9 +2,9 @@ package org.spring.util;
 
 import org.dom4j.Attribute;
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.spring.exception.SpringException;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -16,7 +16,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class BeanFactory {
-    // spring容器中的bean是存在map中的
+    // 这里我们简单使用map来存储在factory中管理的bean，在真实的spring源码中是通过一个定义的数据结构来存储的，因为一个bean有很多数据需要存储，只靠一个map是远远不够的
     Map<String, Object> map = new HashMap<String, Object>();
 
     public BeanFactory(String xml) {

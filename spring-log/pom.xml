@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>spring-log</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>spring-log Maven Webapp</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.0.4.RELEASE</version>
+    </dependency>
+
+    <!--slf4j依赖-->
+<!--    <dependency>-->
+<!--      <groupId>org.slf4j</groupId>-->
+<!--      <artifactId>slf4j-api</artifactId>-->
+<!--      <version>1.7.25</version>-->
+<!--    </dependency>-->
+
+    <!--slf4j的JUL绑定器  与slf4j依赖的版本号必须相同-->
+<!--    <dependency>-->
+<!--      <groupId>org.slf4j</groupId>-->
+<!--      <artifactId>slf4j-jdk14</artifactId>-->
+<!--      <version>1.7.25</version>-->
+<!--    </dependency>-->
+
+    <!--slf4j的log4j绑定器  与slf4j依赖的版本号必须相同   使用log4j绑定器不需要再单独依赖log4j的包，已经包含到依赖包中了-->
+<!--    <dependency>-->
+<!--      <groupId>org.slf4j</groupId>-->
+<!--      <artifactId>slf4j-log4j12</artifactId>-->
+<!--      <version>1.7.25</version>-->
+<!--    </dependency>-->
+
+    <!--slf4j的JCL绑定器  与slf4j依赖的版本号必须相同    不需要单独依赖JCL包，这个绑定器也包含了JCL-->
+<!--    <dependency>-->
+<!--      <groupId>org.slf4j</groupId>-->
+<!--      <artifactId>slf4j-jcl</artifactId>-->
+<!--      <version>1.7.25</version>-->
+<!--    </dependency>-->
+
+    <!--slf4j的JCL桥接器-->
+<!--    <dependency>-->
+<!--      <groupId>org.slf4j</groupId>-->
+<!--      <artifactId>jcl-over-slf4j</artifactId>-->
+<!--      <version>1.7.25</version>-->
+<!--    </dependency>-->
+
+    <!--slf4j的log4j桥接器-->
+<!--    <dependency>-->
+<!--      <groupId>org.slf4j</groupId>-->
+<!--      <artifactId>log4j-over-slf4j</artifactId>-->
+<!--      <version>1.7.25</version>-->
+<!--    </dependency>-->
+
+
+
+    <!--log4j包    使用log4j记录日志必须引用log4j包-->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+    </dependency>
+
+    <!--jcl包    使用jcl记录日志必须引用jcl包-->
+<!--    <dependency>-->
+<!--      <groupId>commons-logging</groupId>-->
+<!--      <artifactId>commons-logging</artifactId>-->
+<!--      <version>1.2</version>-->
+<!--    </dependency>-->
+  </dependencies>
+
+  <build>
+    <finalName>spring-log</finalName>
+
+  </build>
+</project>

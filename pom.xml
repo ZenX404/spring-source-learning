@@ -16,6 +16,7 @@
       <module>simulate spring</module>
       <module>spring</module>
       <module>spring1</module>
+      <module>spring-log</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -10,10 +10,11 @@
         <module name="aop1" />
         <module name="ioc" />
         <module name="spring" />
-        <module name="ioc1" />
+        <module name="spring-log" />
         <module name="aop" />
         <module name="simulate spring" />
         <module name="proxy" />
+        <module name="ioc1" />
       </profile>
     </annotationProcessing>
   </component>

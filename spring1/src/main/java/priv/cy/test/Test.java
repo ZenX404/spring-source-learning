@@ -1,6 +1,7 @@
 package priv.cy.test;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import priv.cy.config.AppConfig;
 import priv.cy.dao.IndexDao;
 
@@ -13,11 +14,20 @@ public class Test {
         AnnotationConfigApplicationContext annotationConfigApplicationContext
                 = new AnnotationConfigApplicationContext();
 
+        // 把一个class转换成bd，然后put到map中，这个map就是DefaultListableBeanFactory中的成员属性beanDefinitionMap
         annotationConfigApplicationContext.register(AppConfig.class);
+        // 初始化spring环境
+        annotationConfigApplicationContext.refresh();
+        // 当完成了上面的过程之后，就已经完成了扫描，但是完成这个扫描工作的不是AnnotationConfigApplicationContext里面的scanner(扫描器)，而是在reader的构造方法AnnotatedBeanDefinitionReader中完成的
+        // 其实scanner只是供我们外部调用扫描用的，spring源码内部不适用这个scanner来完成扫描
+
 
         IndexDao dao = annotationConfigApplicationContext.getBean(IndexDao.class);
         dao.query();
 
+
+//        ClassPathXmlApplicationContext classPathXmlApplicationContext =
+//                new ClassPathXmlApplicationContext();
     }
 
 }

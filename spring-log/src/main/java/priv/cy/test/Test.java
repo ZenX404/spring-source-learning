@@ -9,5 +9,6 @@ public class Test {
                 = new AnnotationConfigApplicationContext(AppConfig.class);
 
         annotationConfigApplicationContext.start();
+
     }
 }

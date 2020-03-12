@@ -20,16 +20,16 @@
 
 
     <!--告诉sping容器UserDaoImpl需要它来管理-->
-    <bean id="dao" class="priv.cy.dao.UserDaoImpl"></bean>
+    <bean id="dao" class="priv.priv.cy.dao.UserDaoImpl"></bean>
 
     <!--告诉sping容器TestDaoImpl需要它来管理-->
-    <bean id="test" class="priv.cy.dao.TestDaoImpl"></bean>
+    <bean id="test" class="priv.priv.cy.dao.TestDaoImpl"></bean>
 
     <!--告诉sping容器UserDaoImpl1需要它来管理-->
-<!--    <bean id="dao1" class="priv.cy.dao.UserDaoImpl1"></bean>-->
+<!--    <bean id="dao1" class="priv.priv.cy.dao.UserDaoImpl1"></bean>-->
 
     <!--告诉sping容器UserServiceImpl需要它来管理-->
-    <bean id="service" class="priv.cy.service.UserServiceImpl">
+    <bean id="service" class="priv.priv.cy.service.UserServiceImpl">
         <!--手动装配优先于自动装配-->
 <!--        <property name="dao" ref="dao"></property>-->
     </bean>

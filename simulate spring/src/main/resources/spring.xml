@@ -15,10 +15,10 @@
 
 
     <!--告诉sping容器UserDaoImpl需要它来管理-->
-    <bean id="dao" class="priv.cy.dao.UserDaoImpl"></bean>
+    <bean id="dao" class="priv.priv.cy.dao.UserDaoImpl"></bean>
 
     <!--告诉sping容器UserServiceImpl需要它来管理-->
-    <bean id="service" class="priv.cy.service.UserServiceImpl">
+    <bean id="service" class="priv.priv.cy.service.UserServiceImpl">
         <!--注入dao对象的前提就是dao对象已经装配给spring容器去管理，所以要先写一个dao对象的bean-->
         <!--注入方法在setter和constructor之中选一个就行，不过要在代码中把需要的构造方法或者setter方法编写出来-->
 

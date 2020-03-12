@@ -5,5 +5,5 @@
        default-init-method="init"
        default-destroy-method="destory" >
 
-    <bean id="dao" class="priv.cy.dao.IndexDaoImpl1"></bean>
+    <bean id="dao" class="priv.priv.cy.dao.IndexDaoImpl1"></bean>
 </beans>

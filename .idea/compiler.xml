@@ -9,12 +9,14 @@
         <module name="spring1" />
         <module name="aop1" />
         <module name="ioc" />
-        <module name="spring" />
         <module name="spring-log" />
+        <module name="spring" />
+        <module name="ioc1" />
         <module name="aop" />
         <module name="simulate spring" />
         <module name="proxy" />
-        <module name="ioc1" />
+        <module name="mybatis-log" />
+        <module name="simulate mybatis" />
       </profile>
     </annotationProcessing>
   </component>

@@ -5,11 +5,11 @@
         >
 
 
-    <bean id="dao" class="priv.cy.dao.IndexDaoImpl"></bean>
+    <bean id="dao" class="priv.priv.cy.dao.IndexDaoImpl"></bean>
 
-    <bean id="dao1" class="priv.cy.dao.IndexDaoImpl1"></bean>
+    <bean id="dao1" class="priv.priv.cy.dao.IndexDaoImpl1"></bean>
 
-    <bean id="service" class="priv.cy.dao.IndexService" autowire="byName"></bean>
+    <bean id="service" class="priv.priv.cy.dao.IndexService" autowire="byName"></bean>
 
 </beans>
 

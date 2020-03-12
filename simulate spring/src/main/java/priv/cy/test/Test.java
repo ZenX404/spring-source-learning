@@ -14,7 +14,7 @@ public class Test {
         // 使用注解配置spring
         AnnotationConfigApplicationContext annotationConfigApplicationContext
                 = new AnnotationConfigApplicationContext();
-        annotationConfigApplicationContext.scan("priv.cy.service");
+        annotationConfigApplicationContext.scan("priv.priv.cy.service");
 
        // service.find();
     }

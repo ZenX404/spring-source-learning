@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="daoFactory" class="priv.cy.dao.DaoFactoryBean">
+    <bean id="daoFactory" class="priv.priv.cy.dao.DaoFactoryBean">
         <property name="msg" value="msg1,msg2,msg3"></property>
     </bean>
 </beans>

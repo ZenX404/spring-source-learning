@@ -45,7 +45,7 @@ public class JdkProxyUtil {
         String packageContent = "package com.test;" + line;
         // 导入包
         String importContent = "import " + targetInf.getName() + ";" + line
-                + "import priv.cy.dao.CoustomInvocationHandler;" + line
+                + "import priv.priv.cy.dao.CoustomInvocationHandler;" + line
                 + "import java.lang.Exception;"
                 + "import java.lang.reflect.Method;" + line;
 

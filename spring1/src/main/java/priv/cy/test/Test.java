@@ -1,9 +1,24 @@
 package priv.cy.test;
 
+import org.springframework.beans.PropertyEditorRegistrar;
+import org.springframework.beans.PropertyEditorRegistry;
+import org.springframework.beans.factory.BeanDefinitionStoreException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.HierarchicalBeanFactory;
+import org.springframework.beans.factory.NoSuchBeanDefinitionException;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.config.BeanExpressionResolver;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.beans.factory.config.SingletonBeanRegistry;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.convert.ConversionService;
+import org.springframework.util.StringValueResolver;
 import priv.cy.config.AppConfig;
 import priv.cy.dao.IndexDao;
+
+import java.beans.PropertyEditor;
+import java.security.AccessControlContext;
 
 public class Test {
     public static void main(String[] args) {
@@ -31,3 +46,4 @@ public class Test {
     }
 
 }
+

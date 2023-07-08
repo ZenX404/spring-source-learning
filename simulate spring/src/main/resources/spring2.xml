@@ -7,9 +7,9 @@
 
     spring就是通过bean标签来完成上面两个操作的
 -->
-<beans default-autowire="byType">
+
     <!--
-        下法注面面的XML配置文件的含义就是我们将UserDaoImpl和UserServiceImpl装配到spring容器中，将他们的id分别设置成dao和service
+        下面的XML配置文件的含义就是我们将UserDaoImpl和UserServiceImpl装配到spring容器中，将他们的id分别设置成dao和service
         并且实现自动装配（byName/byType）
     -->
 
@@ -17,7 +17,7 @@
         通过byType实现自动装配
         这里需要注意的就是byType自动装配是通过Field类的set方法反射注入的，不依赖setter方法和构造方法，即使没有setter方法和构造方法依旧可以成功注入
     -->
-
+    <beans default-autowire="byType">
 
     <!--告诉sping容器UserDaoImpl需要它来管理-->
     <bean id="dao" class="priv.priv.cy.dao.UserDaoImpl"></bean>

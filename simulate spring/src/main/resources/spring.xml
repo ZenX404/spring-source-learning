@@ -9,7 +9,7 @@
 -->
 <beans>
     <!--
-        下面面的XML配置文件的含义就是我们将UserDaoImpl和UserServiceImpl装配到spring容器中，将他们的id分别设置成dao和service
+        下面的XML配置文件的含义就是我们将UserDaoImpl和UserServiceImpl装配到spring容器中，将他们的id分别设置成dao和service
         service的依赖dao，并且通过相应的setter方法/构造方法注入
     -->
 

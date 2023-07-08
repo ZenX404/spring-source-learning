@@ -12,7 +12,7 @@ import java.net.URLDecoder;
 public class AnnotationConfigApplicationContext {
 
     /**
-     * 真正的AnnotationConfigApplicationContext也有scan这个方法，方法原型和作用我们下面模拟的这个方法作用是一致的。
+     * 真正的AnnotationConfigApplicationContext也有scan这个方法，方法原型和作用与我们下面模拟的这个方法作用是一致的。
      * @param basePackage
      */
     public void scan(String basePackage) {
